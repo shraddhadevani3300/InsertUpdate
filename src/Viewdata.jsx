@@ -34,6 +34,12 @@ const Viewdata = () => {
     var id = e.target.getAttribute("data");
     navigate("/update/" + id);
   };
+
+  const handlelogout=()=>{
+      localStorage.clear();
+      navigate('/')
+  }
+
   return (
     <>
     <h1>you are Login mr {localStorage.getItem("name") } </h1>
@@ -69,8 +75,8 @@ const Viewdata = () => {
           );
         })}
       </table>
-      <Link to="insertdata"> Add Data</Link>
-      <button>LogOut</button>
+      <Link to={"insertdata"}> Add Data</Link>
+      <button onClick={handlelogout}>LogOut</button>
     </>
   );
 };
