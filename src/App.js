@@ -12,7 +12,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<Login/>} />
-      <Route path='view' element={<Viewdata/>} />
+      <Route path='view/' element={<Viewdata/>} />
       <Route path='insertdata' element={<Insertdata/>} />
       <Route path='/update/:id' element={<Updateapi/>} />
     </Routes>

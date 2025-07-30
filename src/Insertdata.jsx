@@ -12,7 +12,7 @@ const Insertdata =()=>{
    const navigate= useNavigate();
 
     const submithandle=(e)=>{
-            // e.preventDefault();
+            e.preventDefault();
 
             console.log(txtname.current.value);
             const name=(txtname.current.value)

@@ -25,7 +25,7 @@ const Updateapi =()=>{
     },[])
 
     const submithandle=(e)=>{
-        // e.preventDefault();
+        e.preventDefault();
 
             console.log(txtname.current.value);
             const name=(txtname.current.value)
@@ -46,11 +46,11 @@ const Updateapi =()=>{
              }
             })
     }
-
+ 
     return(
      <>
      
-     <form method="post" action={submithandle} >
+     <form method="post" onSubmit={submithandle} >
       <table border={1} cellPadding={7}>
         <tr>
             <th>Name</th>

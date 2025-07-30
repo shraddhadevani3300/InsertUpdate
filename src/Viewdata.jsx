@@ -75,7 +75,7 @@ const Viewdata = () => {
           );
         })}
       </table>
-      <Link to={"insertdata"}> Add Data</Link>
+      <Link to="/insertdata/"> Add Data</Link>
       <button onClick={handlelogout}>LogOut</button>
     </>
   );
